@@ -1,0 +1,119 @@
+$red: #faa9b0;
+$green: #B5ECD1;
+$yellow: #FBDBAE;
+$blue: #AECCFB;
+
+
+// .note-form-modal {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     border-radius: 35px;
+// }
+
+// .note-form-overlay {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+
+.note-form {
+    height: 65vh;
+    width: 45vw;
+    border-radius: 5px;
+}
+
+.note-form:focus {
+    outline: 0;
+}
+
+.note-color {
+    height: 1vh;
+    background-color: $red;
+}
+
+.note-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+
+    .colors {
+        display: flex;
+        
+    }
+    
+    .color {
+        width: 2vh;
+        height: 2vh;
+        margin-right: 0.8vh;
+        border-radius: 2px;
+    }
+    
+    .red {
+        background-color: $red;
+    }
+    .green {
+        background-color: $green;
+    }
+    .yellow {
+        background-color: $yellow;
+    }
+    .blue {
+        background-color: $blue;
+    }
+
+    > * {
+        margin-bottom: 3vh;
+    }
+
+    input, textarea {
+        border: none;
+    }
+
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+        color: lightgray;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .title::-webkit-input-placeholder {
+        font-style: italic;
+    }
+
+    .body {
+        font-size: 14px;
+        height: 100%
+    }
+}
+
+.note-btns {
+    width: 100%;
+    height: 9vh;
+    position: absolute;
+    bottom: 0px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .note-btn {
+        width: 6vw;
+        height: 4vh;
+        background-color: #D2D3D4;
+        color: white;
+        font-size: 13px;
+        border-radius: 3px;
+        margin: 0 3vw;
+    }
+}
+
+
+
+
+
+
