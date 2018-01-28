@@ -23,7 +23,6 @@ class Api::NotesController < ApplicationController
     end
   end
 
-
   def update
     @note = Note.find_by(id: params[:id])
     
