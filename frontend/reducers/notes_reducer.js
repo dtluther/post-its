@@ -2,6 +2,7 @@ import merge from 'lodash/merge';
 import {
     RECEIVE_NOTES,
     RECEIVE_NOTE,
+    UPDATE_NOTE,
     DELETE_NOTE
 } from '../actions/note_actions';
 
