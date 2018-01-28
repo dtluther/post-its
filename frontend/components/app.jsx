@@ -1,8 +1,15 @@
 import React from 'react';
+import NavBar from './nav_bar';
+import SplashPage from './test';
 
 const App = () => (
     <div>
-        <h1>Post-Its</h1>
+        <header>
+            <NavBar/>
+        </header>
+
+        <section>
+        </section>
     </div>
 );
 

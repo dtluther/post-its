@@ -40,7 +40,8 @@ class Api::NotesController < ApplicationController
     if note
       note.destroy
       render note
-      render "api/notes/show"
+      # #can't have render api/notes/show because doesn't exist after destroy
+      # render "api/notes/show"
     else
       render json: ["Note does not exist/Note cannot be deleted."], status: 422
     end

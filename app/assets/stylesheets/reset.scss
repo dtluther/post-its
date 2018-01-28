@@ -1,0 +1,46 @@
+html,
+body,
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+a,
+ol,
+ul,
+li,
+form,
+label,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+}
+
+input,
+button {
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+// body {
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 44px;
+// }
