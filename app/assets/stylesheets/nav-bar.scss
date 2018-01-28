@@ -1,13 +1,20 @@
 .nav-bar {
     background-color: #1f2532;
     height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .add-note-btn {
-    background: blue;
+    background-color: #56b6bf;
     color: white;
+    font-size: 24px;
     height: 25px;
-    font-family: 'Roboto',
-    sans-serif;
-
+    margin-right: 75px;
+    height: 50%;
+    width: 12%;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
 }

@@ -23,7 +23,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className='nav-bar'>
-                <button className='add-note-btn'>LATADADASDAS</button>
+                <button className='add-note-btn'>+  Add Note</button>
             </div>
         );
     }
