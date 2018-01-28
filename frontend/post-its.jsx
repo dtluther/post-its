@@ -9,7 +9,7 @@ import { fetchNotes, fetchNote, createNote, deleteNote } from './actions/note_ac
 window.notes = fetchNotes;
 window.note = fetchNote;
 window.create = createNote;
-window.delete = deleteNote;
+window.deleteNote = deleteNote;
 
 
 // TESTING END

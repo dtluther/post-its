@@ -48,7 +48,7 @@ export const updateNote = note => dispatch => {
         .then(note => dispatch(receiveNote(note)));
 };
 
-export const deleteNote = note => dispatch => {
-    return NoteAPIUtil.deleteNote(note)
+export const deleteNote = id => dispatch => {
+    return NoteAPIUtil.deleteNote(id)
         .then(note => dispatch(removeNote(note)));
 };
