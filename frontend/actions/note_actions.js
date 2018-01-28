@@ -1,0 +1,2 @@
+export const RECEIVE_NOTES = "RECEIVE_NOTES";
+export const RECEIVE_NOTE = "RECEIVE_NOTE";
