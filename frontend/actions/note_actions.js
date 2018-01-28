@@ -50,5 +50,5 @@ export const updateNote = note => dispatch => {
 
 export const deleteNote = note => dispatch => {
     return NoteAPIUtil.deleteNote(note)
-        .then(note => dispatch(receiveNote(note)));
+        .then(note => dispatch(removeNote(note)));
 };
