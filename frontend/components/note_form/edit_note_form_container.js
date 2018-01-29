@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import NoteForm from './note_form';
+import { withRouter } from 'react-router';
 import { updateNote } from '../../actions/note_actions';
 
 const mapStateToProps = state => {
@@ -14,7 +15,7 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(
+export default withRouter(connect(
     mapStateToProps,
     mapDispatchToProps
-)(NoteForm);
+)(NoteForm));

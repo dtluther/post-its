@@ -33,6 +33,8 @@ class NoteForm extends React.Component {
           e.preventDefault();
           if (this.props.formType === "new") {
               this.props.createNote({note: this.state});
+          } else {
+              this.props.updateNote({note: this.state});
           }
 
           this.props.handleCloseModal();
@@ -40,10 +42,19 @@ class NoteForm extends React.Component {
       };
   }
 
+
+  handleCloseModal() {
+      return e => {
+          e.preventDefault();
+          this.props.handleCloseModal();
+      };
+  }
+
   render() {
-      console.log(this.props.formType);
-    const submit =
-      this.props.formType === "new" ? this.handleSubmit : this.handleSave;
+    console.log(this.props.formType);
+    console.log(this.props);
+    console.log(this.state);
+    let submitText = this.props.formType === "new" ? "Add" : "Save";
     return (
       <div className="note-form">
         <div className="note-color red">
@@ -58,11 +69,13 @@ class NoteForm extends React.Component {
             <input
                 type="text"
                 className="title"
+                value={this.state.title}
                 onChange={this.update("title")}
                 placeholder="Untitled"
             />
             <textarea
                 className="body"
+                value={this.state.body}
                 onChange={this.update("body")}
                 placeholder="Just start typing here"
                 style={{border: 0, outline: 0}}
@@ -70,9 +83,10 @@ class NoteForm extends React.Component {
             />
         </div>
         <div className='note-btns'>
-            <button className='cancel note-btn'>Cancel</button>
+            <button className='cancel note-btn'
+                    onClick={this.handleCloseModal()}>Cancel</button>
             <button className='submit note-btn'
-                    onClick={this.handleSubmit()}>Submit</button>
+                    onClick={this.handleSubmit()}>{submitText}</button>
         </div>
       </div>
     );
