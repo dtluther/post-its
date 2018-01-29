@@ -32,7 +32,7 @@ class NoteForm extends React.Component {
       this.props.formType === "new" ? this.handleSubmit : this.handleSave;
     return (
       <div className="note-form">
-        <div className="note-color">
+        <div className="note-color red">
         </div>
         <div className="note-info">
             <div className="colors">

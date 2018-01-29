@@ -1,0 +1,61 @@
+.notes-index-div {
+    padding: 40px 75px;
+    background-color: #F9F9FB;
+}
+
+.notes-index-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note-index-item-li {
+    width: calc(25% - 30px);
+    height: 33vh;
+    margin: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    box-shadow: 0px 0.5px 1px gray,
+    -1px 0.5px 1.5px gray,
+    1px 0.5px 1.5px gray;
+    border-radius: 5px;
+
+    .note-index-item {
+        width: 100%;
+        
+        .note-color {
+            border-radius: 5px 5px 0 0;
+        }
+        .note-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 0.5px solid lightgray;
+            align-items: center;
+
+            h2 {
+                height: 50px;
+                font-size: 26px !important;
+                color: #4D6776 !important;
+            }
+
+            .note-item-btns > i {
+                margin-left: 5px;
+                color: #DCDDDE;
+                font-size: 20px;
+            }
+
+            .note-item-btns > i:hover {
+                color: #66C4CD;
+                cursor: pointer;
+            }
+        }
+    }
+
+    p {
+        color: #ABA8B1;
+        font-size: 14px;
+        padding: 20px
+    }
+
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './nav_bar';
+import NoteIndexContainer from './notes_index/notes_index_container'
 
 const App = () => (
     <div>
@@ -7,8 +8,9 @@ const App = () => (
             <NavBar/>
         </header>
 
-        <section>
-        </section>
+        <main>
+            <NoteIndexContainer/>
+        </main>
     </div>
 );
 
