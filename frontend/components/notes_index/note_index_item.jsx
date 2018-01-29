@@ -106,6 +106,7 @@ class NoteIndexItem extends React.Component {
                                 }}
                             >
                                 <EditNoteFormContainer
+                                    note={this.props.note}
                                     welcomeState={this.state}
                                     handleCloseModal={this.handleCloseModal}
                                 />

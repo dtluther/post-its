@@ -12,10 +12,10 @@ class NoteForm extends React.Component {
       };
     } else if (this.props.formType === "edit") {
       this.state = {
-        id: this.props.id,
-        color: this.props.color,
-        title: this.props.title,
-        body: this.props.body
+        id: this.props.note.id,
+        color: this.props.note.color,
+        title: this.props.note.title,
+        body: this.props.note.body
       };
     }
   }
@@ -31,10 +31,13 @@ class NoteForm extends React.Component {
   handleSubmit() {
       return e => {
           e.preventDefault();
+          console.log(this.props);
           if (this.props.formType === "new") {
               this.props.createNote({note: this.state});
+              console.log('new');
           } else {
-              this.props.updateNote({note: this.state});
+              console.log('edit')
+              this.props.updateNote(this.state);
           }
 
           this.props.handleCloseModal();
@@ -51,9 +54,6 @@ class NoteForm extends React.Component {
   }
 
   render() {
-    console.log(this.props.formType);
-    console.log(this.props);
-    console.log(this.state);
     let submitText = this.props.formType === "new" ? "Add" : "Save";
     return (
       <div className="note-form">
