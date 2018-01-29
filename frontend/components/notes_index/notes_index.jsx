@@ -28,7 +28,7 @@ class NotesIndex extends React.Component {
         if (notes.length > 0) {
             return(
                 <ul className="notes-index-ul">
-                    {notes.map((note, idx) => {
+                    {notes.reverse().map((note, idx) => {
                         return (
                             <li className="note-index-item-li" key={`note-${idx}`}>
                                 <NoteIndexItem note={note} idx={idx}
