@@ -55,15 +55,21 @@ $blue: #AECCFB;
 
     .colors {
         display: flex;
+        align-items: center;
         
+        .color {
+            width: 2.1vw;
+            height: 2.1vw;
+            margin-right: 0.9vh;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .active {
+            border: 1.6px solid #AAB1B5;
+        }
     }
     
-    .color {
-        width: 2vh;
-        height: 2vh;
-        margin-right: 0.8vh;
-        border-radius: 2px;
-    }
     
 
     > * {
@@ -110,11 +116,21 @@ $blue: #AECCFB;
         color: white;
         font-size: 13px;
         border-radius: 3px;
+        border: none;
         margin: 0 3vw;
+    }
+    
+    .cancel {
+        cursor: pointer;
     }
 
     .submit {
         background-color: #B0DFE3;
+    }
+    
+    .submit.active {
+        background-color: #66c4cc;
+        cursor: pointer;
     }
 }
 
