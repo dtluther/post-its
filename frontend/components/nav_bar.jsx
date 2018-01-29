@@ -26,7 +26,7 @@ class NavBar extends React.Component {
     newNoteModal() {
         return (
             <div className='nav-bar'>
-                <button className='add-note-btn' onClick={this.handleOpenNoteFormModal}>+  Add Note</button>
+                <button className='add-note-btn' onClick={this.handleOpenNoteFormModal}>+    Add Note</button>
                 <Modal className="new-note-modal note-form-modal"
                        overlayClassName="new-note-overlay note-form-overlay"
                        isOpen={this.state.noteFormModalIsOpen}
