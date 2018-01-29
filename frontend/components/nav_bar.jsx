@@ -55,7 +55,7 @@ class NavBar extends React.Component {
                 >
                     <NewNoteFormContainer
                         welcomeState={this.state}
-                        handleCloseModals={this.handleCloseModal}
+                        handleCloseModal={this.handleCloseModal}
                     />
                 </Modal>
             </div>

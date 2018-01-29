@@ -24,10 +24,24 @@ class NoteForm extends React.Component {
     return e => {
       e.preventDefault();
       this.setState({ [field]: e.target.value });
+
     };
   }
 
+  handleSubmit() {
+      return e => {
+          e.preventDefault();
+          if (this.props.formType === "new") {
+              this.props.createNote({note: this.state});
+          }
+
+          this.props.handleCloseModal();
+
+      };
+  }
+
   render() {
+      console.log(this.props.formType);
     const submit =
       this.props.formType === "new" ? this.handleSubmit : this.handleSave;
     return (
@@ -57,7 +71,8 @@ class NoteForm extends React.Component {
         </div>
         <div className='note-btns'>
             <button className='cancel note-btn'>Cancel</button>
-            <button className='submit note-btn'>Submit</button>
+            <button className='submit note-btn'
+                    onClick={this.handleSubmit()}>Submit</button>
         </div>
       </div>
     );

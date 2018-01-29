@@ -10,6 +10,12 @@ class NotesIndex extends React.Component {
         this.props.fetchNotes();
     }
 
+    componentWillReceiveProps(newProps) {
+        if (newProps.notes.length !== this.props.notes.length) {
+            this.props.fetchNotes();
+        }
+    }
+
     handleDelete(noteId) {
         return e => {
             e.preventDefault();
@@ -25,7 +31,9 @@ class NotesIndex extends React.Component {
                     {notes.map((note, idx) => {
                         return (
                             <li className="note-index-item-li" key={`note-${idx}`}>
-                                <NoteIndexItem note={note} idx={idx}/>
+                                <NoteIndexItem note={note} idx={idx}
+                                    deleteNote={this.props.deleteNote}
+                                    updateNote={this.props.updateNote}/>
                             </li>
                         );
                     })}

@@ -35,6 +35,7 @@ class Api::NotesController < ApplicationController
   end
 
   def destroy
+    debugger;
     note = Note.find(params[:id])
 
     if note
