@@ -13,7 +13,7 @@ class NoteIndexItem extends React.Component {
             <div className="note-index-item">
                 <div className={`note-color ${color}`} />
                 <div className="note-header">
-                    <h1>{this.props.note.title}</h1>
+                    <p>{this.props.note.title}</p>
                     <div className="note-item-btns">
                         <i class="fa fa-pencil" aria-hidden="true" />
                         <i class="fa fa-trash" aria-hidden="true" />
