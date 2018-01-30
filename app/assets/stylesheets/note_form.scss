@@ -140,7 +140,7 @@ $blue: #AECCFB;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .note-form {
         height: 45vh;
         .note-info {

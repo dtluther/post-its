@@ -76,13 +76,13 @@ $lightgray: #DCDDDE;
 
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .note-index-item-li {
         width: calc(50% - 20px);
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .note-index-item-li {
         width: calc(100% - 20px);
     }
