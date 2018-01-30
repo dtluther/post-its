@@ -57,12 +57,9 @@ class NoteForm extends React.Component {
   handleSubmit() {
       return e => {
           e.preventDefault();
-          console.log(this.props);
           if (this.props.formType === "new") {
               this.props.createNote({note: this.state});
-              console.log('new');
           } else {
-              console.log('edit')
               this.props.updateNote(this.state);
           }
 
