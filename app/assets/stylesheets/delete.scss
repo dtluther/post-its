@@ -1,4 +1,5 @@
 .handle-delete {
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     height: 23vh;
@@ -30,8 +31,8 @@
         border-radius: 0 0 5px 5px;
         
         .delete-btn {
-            width: 6vw;
-            height: 4vh;
+            width: 63px;
+            height: 28px;
             color: white;
             font-size: 13px;
             border-radius: 3px;

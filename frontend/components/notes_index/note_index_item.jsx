@@ -63,7 +63,7 @@ class NoteIndexItem extends React.Component {
                                         outline: 'none',
                                         backgroundColor: 'white',
                                         position: 'absolute',
-                                        top: '60%',
+                                        top: '57%',
                                         left: '50%',
                                         transform: 'translate(-50%, -50%)',
                                         borderRadius: '5px'

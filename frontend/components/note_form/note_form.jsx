@@ -119,7 +119,7 @@ class NoteForm extends React.Component {
             </div>
             <input type="text" className="title" value={this.state.title} onChange={this.update("title")} placeholder="Untitled" />
             <textarea className="body" value={this.state.body} onChange={this.update("body")} placeholder="Just start typing here" 
-            style={{ border: 0, outline: 0 }} rows="15" />
+            style={{ border: 0, outline: 0 }} />
             </div>
             <div className="note-btns">
             <button className="cancel note-btn" onClick={this.handleCloseModal()}>

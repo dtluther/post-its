@@ -1,7 +1,7 @@
 $lightgray: #DCDDDE;
 
 .notes-index-div {
-    padding: 35px 60px;
+    padding: 35px 55px;
     background-color: #F9F9FB;
 }
 
@@ -13,6 +13,7 @@ $lightgray: #DCDDDE;
 .note-index-item-li {
     background-color: white;
     width: calc(25% - 20px);
+    min-width: 225px;
     height: 33vh;
     margin: 0 10px;
     box-sizing: border-box;
@@ -37,16 +38,21 @@ $lightgray: #DCDDDE;
 
             p {
                 max-width: 70%;
-                font-size: 1.4vw;
+                font-size: 20px;
                 color: #4D6776;
                 padding: 0;
                 text-align: center;
             }
 
-            .note-item-btns > i {
-                margin-left: 10px;
-                color: $lightgray;
-                font-size: 20px;
+            
+            .note-item-btns {
+                min-width: 55px;
+
+                i {
+                    margin-left: 10px;
+                    color: $lightgray;
+                    font-size: 20px;
+                }
             }
 
             .note-item-btns > i:hover {
@@ -58,9 +64,20 @@ $lightgray: #DCDDDE;
 
     p {
         color: #ABA8B1;
-        font-size: 1vw;
+        font-size: 14px;
         padding: 20px;
     }
 
 }
 
+@media screen and (max-width: 1000px) {
+    .note-index-item-li {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .note-index-item-li {
+        width: calc(100% - 20px);
+    }
+}
