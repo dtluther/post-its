@@ -4,13 +4,13 @@ $yellow: #FBDBAE;
 $blue: #AECCFB;
 
 
-.note-form-modal {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    border-radius: 5px;
-}
+// .note-form-modal {
+//     // position: absolute;
+//     // top: 50%;
+//     // left: 50%;
+//     // transform: translate(-50%, -50%);
+//     border-radius: 5px;
+// }
 
 // .note-form-overlay {
 //     position: fixed;
@@ -21,7 +21,8 @@ $blue: #AECCFB;
 // }
 
 .note-form {
-    height: 65vh;
+    min-width: 200px;
+    height: 70vh;
     width: 45vw;
     border-radius: 5px;
 }
@@ -55,15 +56,21 @@ $blue: #AECCFB;
 
     .colors {
         display: flex;
+        align-items: center;
         
+        .color {
+            width: 22px;
+            height: 22px;;
+            margin-right: 0.9vh;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .active {
+            border: 1.6px solid #AAB1B5;
+        }
     }
     
-    .color {
-        width: 2vh;
-        height: 2vh;
-        margin-right: 0.8vh;
-        border-radius: 2px;
-    }
     
 
     > * {
@@ -73,13 +80,14 @@ $blue: #AECCFB;
     input, textarea {
         border: none;
     }
-
+    
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
         color: lightgray;
     }
-
+    
     .title {
         font-size: 24px;
+        color: #4D6776;
     }
 
     .title::-webkit-input-placeholder {
@@ -87,8 +95,10 @@ $blue: #AECCFB;
     }
 
     .body {
+        resize: none;
         font-size: 14px;
-        height: 100%
+        height: 43vh;
+        color: #9BA8B0;
     }
 }
 
@@ -96,6 +106,7 @@ $blue: #AECCFB;
     width: 100%;
     height: 9vh;
     position: absolute;
+    left: 0px;
     bottom: 0px;
     background-color: #fafafa;
     display: flex;
@@ -104,16 +115,41 @@ $blue: #AECCFB;
     border-radius: 0 0 5px 5px;
 
     .note-btn {
-        width: 6vw;
-        height: 4vh;
-        background-color: #D2D3D4;
+        width: 63px;
+        height: 28px;
         color: white;
         font-size: 13px;
         border-radius: 3px;
+        border: none;
         margin: 0 3vw;
+    }
+    
+    .cancel {
+        background-color: #D2D3D4;
+        cursor: pointer;
+    }
+
+    .submit {
+        background-color: #B0DFE3;
+        cursor: not-allowed;
+    }
+    
+    .submit.active {
+        background-color: #66c4cc;
+        cursor: pointer;
     }
 }
 
+@media screen and (max-width: 600px) {
+    .note-form {
+        height: 45vh;
+        .note-info {
+            .body {
+                height: 18vh;
+            }
+        }
+    }
+}
 
 
 

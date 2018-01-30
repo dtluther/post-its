@@ -1,20 +1,29 @@
 .nav-bar {
     background-color: #1f2532;
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    .add-note-btn {
+        background-color: #56b6bf;
+        color: white;
+        font-size: 18px;
+        height: 25px;
+        margin-right: 75px;
+        height: 45%;
+        width: 160px;
+        border-radius: 5px;
+        border: 0px;
+        cursor: pointer;
+    }
 }
 
-.add-note-btn {
-    background-color: #56b6bf;
-    color: white;
-    font-size: 24px;
-    height: 25px;
-    margin-right: 75px;
-    height: 50%;
-    width: 12%;
-    border-radius: 5px;
-    border: 0px;
-    cursor: pointer;
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        justify-content: center;
+        .add-note-btn {
+            margin: 0;
+        }
+    }
 }
