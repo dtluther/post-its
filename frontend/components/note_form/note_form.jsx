@@ -18,13 +18,10 @@ class NoteForm extends React.Component {
         body: this.props.note.body
       };
     }
-
-    // this.initialState = this.state;
   }
 
   componentDidMount() {
       const colors = document.querySelectorAll('.colors > .color');
-    //   const colors = document.querySelectorAll(".colors > .color");
       window.colors = colors;
       colors.forEach( colorEl => {
           if (colorEl.className.includes(`${this.state.color}`)) {

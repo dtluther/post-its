@@ -8,7 +8,7 @@ const App = () => (
             <NavBar/>
         </header>
 
-        <main>
+        <main id="main">
             <NoteIndexContainer/>
         </main>
     </div>
