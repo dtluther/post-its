@@ -13,7 +13,7 @@ $lightgray: #DCDDDE;
 .note-index-item-li {
     background-color: white;
     width: calc(25% - 20px);
-    min-width: 225px;
+    min-width: 175px;
     height: 33vh;
     margin: 0 10px;
     box-sizing: border-box;
@@ -66,11 +66,12 @@ $lightgray: #DCDDDE;
         color: #ABA8B1;
         font-size: 14px;
         padding: 20px;
+        word-wrap: break-word
     }
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .note-index-item-li {
         width: calc(50% - 20px);
     }
