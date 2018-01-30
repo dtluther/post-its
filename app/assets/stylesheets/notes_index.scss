@@ -1,8 +1,10 @@
 $lightgray: #DCDDDE;
 
-main {
+#main {
     background-color: #F9F9FB;
+    height: calc(100vh - 100px);
 }
+
 .notes-index-div {
     padding: 35px 55px;
     background-color: #F9F9FB;
